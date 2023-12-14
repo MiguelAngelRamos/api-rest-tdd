@@ -8,6 +8,7 @@ export class MysqlConnection {
     this.pool = mysql.createPool(this.dbConfig);
   }
 
+
   async getConnection(): Promise<mysql.PoolConnection> {
     try {
       const connection = await this.pool.getConnection();

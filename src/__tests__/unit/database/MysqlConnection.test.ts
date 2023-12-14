@@ -24,3 +24,4 @@ describe('MysqlConnection', () => {
 
 });
 
+//* Simular la no conexion con casos de error
