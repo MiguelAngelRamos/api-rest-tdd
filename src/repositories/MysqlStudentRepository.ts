@@ -1,7 +1,8 @@
 import { MysqlConnection } from "../database/MysqlConnection";
 import { IStudent } from "../interfaces/IStudent";
+import { IStudentRepository } from '../interfaces/IStudentRepository';
 
-export class MysqlStudentRepository {
+export class MysqlStudentRepository implements IStudentRepository {
 
   constructor(private readonly dbConnection: MysqlConnection) {}
 
