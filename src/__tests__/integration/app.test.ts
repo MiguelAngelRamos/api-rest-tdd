@@ -1,15 +1,16 @@
 import { Express } from 'express';
 import request from 'supertest';
 //* Necesito un archivo de configuracion de las variables necesarias para la conexion hacia la base de datos
-import config from '../../src/config';
+import config from '../../config';
 
-import { app, server } from '../../src/app';
+
 import { InjectionMode, asClass, asValue, createContainer } from 'awilix';
 import { MysqlConnection } from '../../database/MysqlConnection';
 import { MysqlStudentRepository } from '../../repositories/MysqlStudentRepository';
 import { StudentService } from '../../services/StudentService';
 import { StudentController } from '../../controllers/StudentController';
 import { scopePerRequest } from 'awilix-express';
+import { app, server } from '../../app';
 
 
 describe('App', () => {

@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1703022423184" clover="3.2.0">
-  <project timestamp="1703022423184" name="All files">
-    <metrics statements="27" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="9" coveredmethods="9" elements="38" coveredelements="36" complexity="0" loc="27" ncloc="27" packages="4" files="4" classes="4"/>
-    <package name="src">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="app.ts" path="C:\Users\MIGUEL\Desktop\curso_tdd\api-rest\src\app.ts">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.database">
+<coverage generated="1703191101021" clover="3.2.0">
+  <project timestamp="1703191101021" name="All files">
+    <metrics statements="22" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8" elements="32" coveredelements="30" complexity="0" loc="22" ncloc="22" packages="3" files="3" classes="3"/>
+    <package name="database">
       <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="MysqlConnection.ts" path="C:\Users\MIGUEL\Desktop\curso_tdd\api-rest\src\database\MysqlConnection.ts">
         <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
@@ -29,7 +18,7 @@
         <line num="28" count="1" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
-    <package name="src.repositories">
+    <package name="repositories">
       <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="MysqlStudentRepository.ts" path="C:\Users\MIGUEL\Desktop\curso_tdd\api-rest\src\repositories\MysqlStudentRepository.ts">
         <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
@@ -44,7 +33,7 @@
         <line num="22" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.services">
+    <package name="services">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="StudentService.ts" path="C:\Users\MIGUEL\Desktop\curso_tdd\api-rest\src\services\StudentService.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
