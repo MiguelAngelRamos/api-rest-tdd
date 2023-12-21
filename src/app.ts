@@ -26,7 +26,7 @@ container.register({
 });
 
 app.use(scopePerRequest(container));
-app.use(express.json());
+app.use(express.json()); //* POST enviar del tipo
 //* Vamos al controlador
 app.use('/students', (req, res, next) => {
 

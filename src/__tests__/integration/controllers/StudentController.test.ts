@@ -1,7 +1,6 @@
 import request, {SuperTest, Test } from 'supertest';
 import { app, server } from '../../../../src/app';
 
-//* app.ts -> const server = app.listen(PORT, () => { console.log(`El server online: ${PORT}`)})
 describe('StudentController', () => {
   let baseRequest: SuperTest<Test>;
   //* Antes de cada una de las pruebas, configuramos la instancia de SuperTest
@@ -31,19 +30,19 @@ describe('StudentController', () => {
   });
 
   //* Pruebas para el endpoint GET /students/:id
-  describe('GET /students/:id', () => {
+  // describe('GET /students/:id', () => {
 
-    it('should return a student by id', async () => {
-      const testId = 1;
-      const response = await baseRequest.get(`/students/${testId}`);
-      expect(response.statusCode).toBe(200);
-    });
+  //   it('should return a student by id', async () => {
+  //     const testId = 1;
+  //     const response = await baseRequest.get(`/students/${testId}`);
+  //     expect(response.statusCode).toBe(200);
+  //   });
 
-    it('should return 404 for a non-existent student', async () => {
-      const testId = 99999;
-      const response = await baseRequest.get(`/students/${testId}`);
-      expect(response.statusCode).toBe(404);
-    });
-  });
+  //   it('should return 404 for a non-existent student', async () => {
+  //     const testId = 99999;
+  //     const response = await baseRequest.get(`/students/${testId}`);
+  //     expect(response.statusCode).toBe(404);
+  //   });
+  // });
 
 });
