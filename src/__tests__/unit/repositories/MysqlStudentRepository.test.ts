@@ -33,6 +33,15 @@ describe('MysqlStudentRepository', () => {
       expect(students).toEqual(mockStudents);
     });
   });
+
+  describe('findById', () => {
+    it('debería retornar a un estudiante por Id', async () => {
+      const mockStudent: IStudent = {id: 1, name: 'Catalina', age: 27};
+      mockConnection.getConnection().execute.mockResolvedValue([[mockStudent]]);
+      const student = await repository.findById(1);
+      expect(student).toEqual(mockStudent);
+    });
+  });
 });
 
 //* findAll(), findById(), create(), update(), delete()

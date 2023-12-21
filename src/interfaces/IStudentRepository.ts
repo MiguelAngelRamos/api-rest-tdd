@@ -2,6 +2,7 @@ import { IStudent } from "./IStudent";
 
 export interface IStudentRepository {
   findAll(): Promise<IStudent[]>;
+  findById(id: number): Promise<IStudent | null>
 }
 
 

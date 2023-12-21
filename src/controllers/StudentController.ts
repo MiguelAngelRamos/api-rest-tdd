@@ -21,19 +21,19 @@ export class StudentController {
     res.json(students);
   }
 
-  // @route('/:id') //* localhost:3000/students/:id                 
-  // @GET()
-  // public async getById(req: Request, res: Response) {
-  //   const id:number = Number(req.params.id);
-  //   const student = await this.studentService.getStudentById(id); //* 99999
+  @route('/:id') //* localhost:3000/students/:id                 
+  @GET()
+  public async getById(req: Request, res: Response) {
+    const id:number = Number(req.params.id);
+    const student = await this.studentService.getStudentById(id); //* 99999
 
-  //   if(student) {
-  //     res.json(student);
-  //   } else {
-  //     res.status(404).send("Student not found");
-  //   }
+    if(student) {
+      res.json(student);
+    } else {
+      res.status(404).send("Student not found");
+    }
     
-  // }
+  }
 
 
 }

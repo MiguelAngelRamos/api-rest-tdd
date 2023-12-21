@@ -1,7 +1,8 @@
 import { StudentService } from "../../../../src/services/StudentService";
 
 const mockStudentRepository = {
-  findAll: jest.fn()
+  findAll: jest.fn(),
+  findById: jest.fn()
 }
 
 //* Vamos a crear una instancia de estudiantes usando un repositorio simulado
@@ -33,6 +34,21 @@ describe('StudentService', () => {
       //* Aseguro que el segundo estudiante tenga el nombre 'James'
       expect(result[1].name).toBe('James');
     })
+  });
+
+  describe('getStudentById', () => {
+    it('Should return the correct student base on ID', async () => {
+
+      //* Simular que método findById del repositorio que devuelve un estudiante
+      mockStudentRepository.findById.mockResolvedValue({id: 1, name: 'Richard', age: 25});
+
+      //* Llamar al método getAllStudents del servicio y almacenar el resultado
+      const result = await studentService.getStudentById(1);
+
+      if(result) {
+        expect(result.name).toBe('Richard');
+      }
+    });
   });
 
 });

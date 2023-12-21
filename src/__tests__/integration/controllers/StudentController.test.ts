@@ -7,7 +7,6 @@ describe('StudentController', () => {
   beforeAll(() => {
     const address = server.address();
     //* address tambien es un objeto
-    console.log(address);
     if(!address || typeof address === 'string') {
       throw new Error('Server is not running on an address with a port');
     }
@@ -30,19 +29,19 @@ describe('StudentController', () => {
   });
 
   //* Pruebas para el endpoint GET /students/:id
-  // describe('GET /students/:id', () => {
+  describe('GET /students/:id', () => {
 
-  //   it('should return a student by id', async () => {
-  //     const testId = 1;
-  //     const response = await baseRequest.get(`/students/${testId}`);
-  //     expect(response.statusCode).toBe(200);
-  //   });
+    it('should return a student by id', async () => {
+      const testId = 1;
+      const response = await baseRequest.get(`/students/${testId}`);
+      expect(response.statusCode).toBe(200);
+    });
 
-  //   it('should return 404 for a non-existent student', async () => {
-  //     const testId = 99999;
-  //     const response = await baseRequest.get(`/students/${testId}`);
-  //     expect(response.statusCode).toBe(404);
-  //   });
-  // });
+    it('should return 404 for a non-existent student', async () => {
+      const testId = 99999;
+      const response = await baseRequest.get(`/students/${testId}`);
+      expect(response.statusCode).toBe(404);
+    });
+  });
 
 });
