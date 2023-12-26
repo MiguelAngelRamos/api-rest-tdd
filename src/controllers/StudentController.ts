@@ -13,6 +13,7 @@ export class StudentController {
   constructor(private readonly studentService: IStudentService) {
     this.router = Router();
     this.router.get('/', this.all.bind(this));
+    this.router.get('/:id', this.getById.bind(this));
   }
 
   @GET() //* localhost:3000/students
