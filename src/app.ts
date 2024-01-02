@@ -8,7 +8,7 @@ import { MysqlConnection } from './database/MysqlConnection';
 import { MysqlStudentRepository } from './repositories/MysqlStudentRepository';
 import { StudentService } from './services/StudentService';
 import { StudentController } from './controllers/StudentController';
-
+import cors from 'cors';
 const app: Express = express();
 
 //* Crear el contenedor
@@ -24,6 +24,13 @@ container.register({
   studentService: asClass(StudentService).scoped(),
   studentController: asClass(StudentController).scoped(),
 });
+
+app.use(cors({
+  origin: 'http://localhost:4200',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+}));
 
 app.use(scopePerRequest(container));
 app.use(express.json()); //* POST enviar del tipo

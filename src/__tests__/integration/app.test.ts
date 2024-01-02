@@ -45,6 +45,11 @@ describe('App', () => {
   expect(response.status).toBe(200);
  });
 
+ it('DeberÍa permitir solicitudes de un origin permitido', async()=> {
+     const response = await request(app).get('/students').set('Origin', 'http://localhost:4200');
+     expect(response.headers['access-control-allow-origin']).toBe('http://localhost:4200');
+ })
+
 });
 
 

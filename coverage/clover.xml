@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1703621813282" clover="3.2.0">
-  <project timestamp="1703621813282" name="All files">
-    <metrics statements="70" coveredstatements="67" conditionals="11" coveredconditionals="8" methods="16" coveredmethods="16" elements="97" coveredelements="91" complexity="0" loc="70" ncloc="70" packages="5" files="6" classes="6"/>
+<coverage generated="1704235088468" clover="3.2.0">
+  <project timestamp="1704235088468" name="All files">
+    <metrics statements="70" coveredstatements="67" conditionals="7" coveredconditionals="4" methods="14" coveredmethods="14" elements="91" coveredelements="85" complexity="0" loc="70" ncloc="70" packages="5" files="6" classes="6"/>
     <package name="src">
-      <metrics statements="23" coveredstatements="23" conditionals="6" coveredconditionals="3" methods="3" coveredmethods="3"/>
+      <metrics statements="24" coveredstatements="24" conditionals="4" coveredconditionals="1" methods="2" coveredmethods="2"/>
       <file name="app.ts" path="C:\Users\MIGUEL\Desktop\curso_tdd\api-rest\src\app.ts">
-        <metrics statements="20" coveredstatements="20" conditionals="6" coveredconditionals="3" methods="3" coveredmethods="3"/>
+        <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="1" methods="2" coveredmethods="2"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -14,18 +14,19 @@
         <line num="8" count="2" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="31" count="2" type="stmt"/>
-        <line num="33" count="4" type="stmt"/>
-        <line num="36" count="2" type="cond" truecount="1" falsecount="3"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
         <line num="38" count="2" type="stmt"/>
-        <line num="39" count="2" type="stmt"/>
-        <line num="42" count="2" type="stmt"/>
-        <line num="49" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="43" count="2" type="cond" truecount="1" falsecount="3"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
       </file>
       <file name="config.ts" path="C:\Users\MIGUEL\Desktop\curso_tdd\api-rest\src\config.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -46,8 +47,8 @@
         <line num="15" count="2" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
         <line num="27" count="2" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
         <line num="29" count="2" type="stmt"/>
@@ -57,19 +58,18 @@
       </file>
     </package>
     <package name="src.database">
-      <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="MysqlConnection.ts" path="C:\Users\MIGUEL\Desktop\curso_tdd\api-rest\src\database\MysqlConnection.ts">
-        <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="7" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="15" count="5" type="stmt"/>
-        <line num="16" count="5" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="28" count="5" type="cond" truecount="2" falsecount="0"/>
       </file>
     </package>
     <package name="src.repositories">
@@ -78,13 +78,13 @@
         <metrics statements="17" coveredstatements="15" conditionals="1" coveredconditionals="1" methods="4" coveredmethods="4"/>
         <line num="6" count="3" type="stmt"/>
         <line num="8" count="4" type="stmt"/>
-        <line num="11" count="6" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
         <line num="27" count="3" type="stmt"/>
         <line num="28" count="3" type="stmt"/>
         <line num="29" count="3" type="stmt"/>
@@ -102,7 +102,7 @@
         <line num="6" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
       </file>
     </package>
   </project>
